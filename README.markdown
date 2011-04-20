@@ -6,7 +6,7 @@ http://nlp.stanford.edu/IR-book/html/htmledition/naive-bayes-text-classification
 
 The following script runs the sample that is explained on the above resource:
 
-    php sample-nb-classifier.php 
+    `php sample-nb-classifier.php`
 
 # Naive Bayes text classification for doonish
 
@@ -23,12 +23,11 @@ To run the doonish classifier:
 
 1. (optional) Create the question TSV:
 
-    php generate-questions.php > questions.tsv
-
-*Note:* You need to set up doonish application and the database in order to generate all the questions. 'questions.tsv' is normally  included in the source code so you don't need such thing.
+    `php generate-questions.php > questions.tsv`
 
 2. Run the current doonish categorizer:
 
-    php doonish-classifier.php
+    `php doonish-classifier.php`
 
+*Note:* You need to set up doonish application and the database in order to generate all the questions. 'questions.tsv' is normally  included in the source code so you don't need such thing.
 
