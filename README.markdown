@@ -31,3 +31,21 @@ To run the doonish classifier:
 
 *Note:* You need to set up doonish application and the database in order to generate all the questions. 'questions.tsv' is normally  included in the source code so you don't need such thing.
 
+# Some GIT tips
+
+I'm adding this tips here for myself.
+
+To commit the changes into my local repo. execute the following command. This will open VIM to write the commit log message.
+
+    git commit -a -v 
+
+To push the changes into the server:
+
+    git push -u origin master
+
+To restore a single file:
+
+    git checkout -- [FILENAME]
+
+
+
