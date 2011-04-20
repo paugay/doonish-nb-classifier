@@ -11,7 +11,7 @@ The following script runs the sample that is explained on the above resource:
 # Naive Bayes text classification for doonish
 
 doonish ([doonish.es](http://doonish.es "doonish trivial colavorativo")) is a Trivia game based on 
-the famous Trivia Pursuit but with some collaborative twist. 
+the famous Trivia Pursuit but with some collaborative twist.  
 
 The users can play answering questions but they can create his own questions. In the
 question creation they need to categorize his question into a set of categoris. The purpose
