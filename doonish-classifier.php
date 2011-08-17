@@ -13,15 +13,13 @@
  * @author      Pau Gay <pau.gay@gmail.com>
  */
 
-// initialize zend framework
-include 'bootstrap.php';
-
 /*
  * Step 0) Define some parameters
  */
 
 $config = array(
-    'trainingQuestions' => 720
+    // the number of questions that we will use for training purposes
+    'trainingQuestions' => 2000
 );
 
 $questionArray = parseQuestions('questions.tsv');
@@ -33,8 +31,10 @@ $questionArray = parseQuestions('questions.tsv');
 
 if ($config['trainingQuestions'] > count($questionArray))
 {
-    die ("Error: The 'trainingQuestions' "
-        . "is lower than the number of questions into the TSV file'");
+    die (
+        "Error: The 'trainingQuestions' is lower than the number of"
+        . " questions into the TSV file'"
+    );
 }
 
 /*
@@ -293,7 +293,7 @@ function parseQuestions ($tsv)
         while ($question = fgetcsv($fp, 0, "\t"))
         {
             // check that we have three values
-            if (count($question) == 3)
+            if (count($question) >= 3)
             {
                 // add the question into the question array
                 array_push(

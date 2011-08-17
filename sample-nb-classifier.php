@@ -1,9 +1,5 @@
 <?php  
 
-include 'bootstrap.php';
-
-initialize();
-
 $trainingSet = array(
     array(
         'id' => 1,
