@@ -22,6 +22,18 @@ To run the doonish classifier:
 
     php doonish-classifier.php
 
+Basically what this script does is get the list of questions (from questions.tsv, that basically is the
+export of the question table from the database removing the stop-words and with the category) and using a 
+fixed set of questions for training purposes. Then, with the rest, the script tries to predict the category
+from the question, so at the end you will see something like this:
+
+    Document:    	    [statement of the question]
+    Real category:		[real category]
+    Suggested category:	[suggested category]
+    
+At the very end of the script there is the summary with the total number of questions that the script has 
+processed, the total number of hits and the accuracy.
+
 # Some GIT tips 
 
 I'm adding this GIT tips here for myself.
